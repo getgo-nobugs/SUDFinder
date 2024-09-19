@@ -25,7 +25,7 @@ We use some libraries (e.g., uiautomator2, androguard, cv2) provided by python, 
 ```python
 pips install uiautomator2
 ```
-Setting up
+## Setting up
 
 You can create an emulator before running SUDFinder. See this link for how to create avd using avdmanager. The following sample command will help you create an emulator, which will help you to start using SUDFinder quickly：
 
