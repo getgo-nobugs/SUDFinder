@@ -45,5 +45,8 @@ Run
 If you have downloaded our project and configured the environment, you only need to enter download_path/tool/SUDFinder to execute our sample app with the following command:
 
 ```
-python3 start.py -app_path ./AmazeFileManager-3.7.1.apk -append_device emulator-5554 -append_device emulator-5556
+python3 start.py -project_path ./AmazeFileManager -append_device emulator-5554 -append_device emulator-5556
 ```
+
+```-project_path```: the source code of the app project under test
+```-append_device```: the serial number of devices used in the test, which can be obtained by executing "adb devices" in the terminal.
