@@ -7,17 +7,16 @@ This repository contains all the artifacts (including the dataset and the tool S
 ```
 home
     |
-    | --- Dataset:                      The bug list of 218 bug reports
+    | --- Dataset:                      The bug list of 218 SUD bug reports
     | --- SUDFinder:                    The source code of SUDFinder
          |
-         | --- start.py:                The entry of RegDroid, which accepts the parameters
          | --- main.py                  The main module of SUDFinder
          | --- executor.py              The execution module of SUDFinder
 ```
 
 ## Requirements
 
-Android SDK: API34
+Android SDK: API level 34
 
 python 3.8
 
@@ -28,7 +27,7 @@ pips install uiautomator2
 ```
 Setting up
 
-You can create an emulator before running RegDroid. See this link for how to create avd using avdmanager. The following sample command will help you create an emulator, which will help you to start using RegDroid quickly：
+You can create an emulator before running SUDFinder. See this link for how to create avd using avdmanager. The following sample command will help you create an emulator, which will help you to start using SUDFinder quickly：
 
 ```
 sdkmanager "system-images;android-34;google_apis;x86"
@@ -38,7 +37,13 @@ avdmanager create avd --force --name Android1 --package 'system-images;android-3
 Next, you can start two identical emulators and assign their port numbers with the following commands:
 
 ```
-emulator -avd Android8.0 -read-only -port 5554
-emulator -avd Android8.0 -read-only -port 5556
+emulator -avd Android1 -read-only -port 5554
+emulator -avd Android1 -read-only -port 5556
 ```
 
+Run
+If you have downloaded our project and configured the environment, you only need to enter download_path/tool/SUDFinder to execute our sample app with the following command:
+
+```
+python3 start.py -app_path ./AmazeFileManager-3.7.1.apk -append_device emulator-5554 -append_device emulator-5556
+```
