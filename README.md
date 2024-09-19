@@ -48,7 +48,7 @@ emulator -avd Android1 -read-only -port 5556
 Given the source code of an Android project under test, SUDFinder will first generate test 
 
 ```
-python3 ./v2/apk_gen.py -project_path ./AmazeFileManager -append_device emulator-5554 -append_device emulator-5556
+python3 ./apk_gen.py -project_path ./AmazeFileManager -append_device emulator-5554 -append_device emulator-5556
 ```
 
 ```-project_path```: the source code of the app project under test
