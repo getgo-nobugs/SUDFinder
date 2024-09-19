@@ -7,8 +7,8 @@ This repository contains all the artifacts (including the dataset and the tool S
 ```
 home
     |
-    | --- Dataset:                      The bug list of 218 SUD bug reports
-    | --- SUDFinder:                    The source code of SUDFinder
+    | --- dataset:                      The bug list of 218 SUD bug reports
+    | --- tool:                         The source code of SUDFinder
          |
          | --- main_scale.py            The main module of SUDFinder for cheking scale mode
          | --- main_screen.py           The main module of SUDFinder for cheking screen mode
