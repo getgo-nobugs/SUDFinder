@@ -14,7 +14,6 @@ home
          | --- main_screen.py           The main module of SUDFinder for cheking screen mode
          | --- main_nightmode.py        The main module of SUDFinder for cheking night mode
          | --- main_language.py         The main module of SUDFinder for cheking language mode
-         | --- executor.py              The execution module of SUDFinder
 ```
 
 ## Requirements
